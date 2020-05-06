@@ -10,11 +10,11 @@ metadata:
 spec:
   releaseName: podinfo-prod
   chart:
-    git: git@github.com:fluxcd/helm-operator-get-started
+    git: git@github.com:jvdiago/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
-      tag: 0.4.11
+      repository: 10.0.2.15:5000/podinfo
+      tag: 1.0
     replicaCount: 3
